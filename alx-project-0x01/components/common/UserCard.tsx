@@ -5,7 +5,7 @@ interface Props {
   user: UserProps;
 }
 
-const UserCard: React.FC<Props> = ({ user }) => {
+const UserCard: React.FC<UserProps> = ({ user }) => {
   return (
     <div className="border p-4 rounded shadow hover:shadow-md transition duration-300">
       <h2 className="text-xl font-semibold mb-1">{user.name}</h2>
